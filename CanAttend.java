@@ -33,6 +33,6 @@ public class CanAttend {
 		meet.clear();
 		meet.add(new MeetingInterval(0, 30));
 		meet.add(new MeetingInterval(50,100));
-		meet.add(new MeetingInterval(10, 40));
+		System.out.println(canAttend(meet) ? "There is no conflict with attending "+meet+" meetings":"Can't attend "+meet+" meetings due to conflict");
 	}
 }
